@@ -1,6 +1,6 @@
 # RPRL
 
-This repository is the implementation of International Conference of Data Mining (ICDM2025) paper: Towards Propagation-aware Representation Learning for Supervised Social Media Graph Analytics
+This repository is the implementation of International Conference on Data Mining (ICDM2025) paper: Towards Propagation-aware Representation Learning for Supervised Social Media Graph Analytics
 
 ![SNS](RPRL.png)
 
