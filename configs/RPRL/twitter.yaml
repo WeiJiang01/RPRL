@@ -1,0 +1,39 @@
+# model and data
+model_name: RPRL
+dataset: twitter
+pretrain_dataset: christianity
+data_path: ./data/twitter/
+debug: False
+
+# training parameters
+seed: 0
+device: cuda
+lr: 0.0005
+weight_decay: 0
+epoch: 290 # pretrain: 300
+time_step_split: 8
+PAD: 0
+EOS: 1
+
+# model parameters
+batch_size: 128
+hidden_dim: 128
+num_features: 128
+graph_hidden_dim: 128
+num_layers: 3
+num_heads: 2
+p_num_layers: 1
+p_num_heads: 1
+p_hidden_dim: 128
+gconv_dropout: 0.3
+trans_dropout: 0.3
+n_layers_conv: 1
+g_c: 0.1
+alpha: 0.1 # pretrain 0.1
+select_hop: 30
+edge_norm: True
+undirected: True
+max_len: 200
+train_mode: finetune
+task: information_diffusion
+

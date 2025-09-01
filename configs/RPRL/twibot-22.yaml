@@ -1,0 +1,35 @@
+# model and data
+model_name: RPRL
+dataset: twibot-22
+pretrain_dataset: MGTAB
+debug: False
+
+# training parameters
+seed: 0
+device: cuda
+lr: 0.001
+weight_decay: 0.01 # pretrain: 0.001
+n_epochs: 100
+
+# model parameters
+batch_size: 128
+num_features: 1544
+hidden_dim: 128
+graph_hidden_dim: 128
+p_hidden_dim: 128
+num_layers: 3
+num_heads: 4
+p_num_layers: 1
+p_num_heads: 1
+gconv_dropout: 0.3
+trans_dropout: 0.3
+num_relations: 4
+n_layers_conv: 1
+num_classes: 2
+g_c: 0.8 # pretrain: 0.7
+neighbor_num: 5
+n_hops: 2
+select_hop: 2
+alpha: 0.1
+train_mode: finetune
+task: socialbot_detection

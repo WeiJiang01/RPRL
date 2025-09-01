@@ -1,0 +1,40 @@
+# model and data
+model_name: RPRL
+dataset: Weibo
+pretrain_dataset: DRWeibo
+num_classes: 2
+language: ch # en or ch
+word_embedding: word2vec
+debug: False
+
+# training parameters
+seed: 0
+device: cuda
+lr: 0.0005
+weight_decay: 0
+n_epochs: 20 # pretrain 50
+split: '622'
+
+# model parameters
+batch_size: 128
+hidden_dim: 128
+p_hidden_dim: 128
+graph_hidden_dim: 128
+tokenize_mode: jieba
+k: 10000
+num_features: 200
+num_layers: 2
+num_heads: 4
+p_num_layers: 1
+p_num_heads: 1
+gconv_dropout: 0.3
+trans_dropout: 0.3
+n_layers_conv: 2
+skip_connection: True
+edge_norm: True
+g_c: 0.5 # pretrain 0.5
+alpha: 0.5 
+undirected: True
+select_hop: 10
+task: rumor_detection
+train_mode: finetune
