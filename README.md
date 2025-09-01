@@ -4,7 +4,7 @@ This repository is the implementation of International Conference of Data Mining
 
 ![SNS](RPRL.png)
 
-## Dataset and Run
+## Download Dataset and Run
 
 Download dataset from this anonymous link: https://drive.google.com/file/d/1-wA-Z8nY3ymelgq_7JwBZDDKKqZ30BIv/view?usp=drive_link
 
